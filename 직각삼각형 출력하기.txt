@@ -1,0 +1,43 @@
+//IDE: Visual Studio 2019 Community
+//Date: 2020-01-31
+
+#include <stdio.h>
+
+void print_star(int line)
+{
+	int i, j;
+
+	for (i = 0; i < line; i++)
+	{
+		for (j = 0; j <= i; j++)
+		{
+			printf("*");
+		}
+		printf("\n");
+	}
+}
+
+int main()
+{
+	int line;
+
+	printf("몇 줄로 삼각형을 만들 것인가? ");
+	scanf_s("%d", &line);
+	print_star(line);
+
+	return 0;
+}
+
+/*
+
+[input]
+5
+
+[output]
+*
+**
+***
+****
+*****
+
+*/
