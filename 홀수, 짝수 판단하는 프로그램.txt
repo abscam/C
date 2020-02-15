@@ -1,0 +1,41 @@
+//IDE: Visual Studio 2019 Community
+//Date: 2020-02-15
+
+#include <stdio.h>
+
+int main()
+{
+	int value;
+
+	while (1)
+	{
+		printf("숫자를 입력하고 [Enter]를 치세요: ");
+		scanf_s("%d", &value);
+
+		if (value % 2 == 0) 
+		{
+			printf("%d는 짝수입니다. \n", value);
+		}
+		else
+		{
+			printf("%d는 홀수입니다. \n", value);
+		}
+	}
+}
+
+/*
+
+[output]
+
+숫자를 입력하고 [Enter]를 치세요: 1
+1는 홀수입니다.
+숫자를 입력하고 [Enter]를 치세요: 2
+2는 짝수입니다.
+숫자를 입력하고 [Enter]를 치세요: 3
+3는 홀수입니다.
+숫자를 입력하고 [Enter]를 치세요: 100
+100는 짝수입니다.
+숫자를 입력하고 [Enter]를 치세요: 221
+221는 홀수입니다.
+
+*/
