@@ -1,0 +1,41 @@
+//IDE: Visual Studio 2019 Community
+//Date: 2020-02-15
+
+#include <stdio.h>
+
+int main()
+{
+	int sub1, sub2, sub3;				// 과목 3개의 점수를 입력받기 위한 변수 선언
+	int total;						// 과목들의 합계를 입력받을 변수 선언
+	double average;					// 과목들의 평균을 입력받을 변수 선언
+
+	printf("첫 번째 과목의 점수를 입력하세요: ");
+	scanf_s("%d", &sub1);			// 첫번째 과목 점수 입력
+
+	printf("두 번째 과목의 점수를 입력하세요: ");
+	scanf_s("%d", &sub2);			// 두번째 과목 점수 입력
+
+	printf("세 번째 과목의 점수를 입력하세요: ");
+	scanf_s("%d", &sub3);			// 세번째 과목 점수 입력
+
+	total = sub1 + sub2 + sub3;			//과목 별 점수를 모두 합하여 total 변수에 선언
+	average = total / 3;			//total 변수에 선언된 총합으로 평균을 구한 후 average 변수에 선언
+
+	printf("합계 점수: %d \n", total);		//합계 점수 출력
+	printf("평균 점수: %g \n", average);		//평균 점수 출력
+
+	return 0;
+}
+
+/*
+
+[input]
+첫 번째 과목의 점수를 입력하세요: 100
+두 번째 과목의 점수를 입력하세요: 99
+세 번째 과목의 점수를 입력하세요: 99
+
+[output]
+합계 점수: 298
+평균 점수: 99
+
+*/
