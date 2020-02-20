@@ -1,0 +1,37 @@
+//IDE: Visual Studio 2019 Community
+//Date: 2020-02-20
+
+#include <stdio.h>
+
+int main()
+{
+	int value;		//성별 구분에 사용할 변수 선언
+
+	printf("남자는 1, 여자는 2를 선택: ");	
+	scanf_s("%d", &value);			//성별에 대한 정수값을 입력한다.
+
+	switch (value)		//switch() 선언, [남자,여자]의 두가지 case랑 default를 생성한다.
+	{
+	case 1: 
+		printf("당신은 남자입니다. \n");
+		break;		//1번을 입력한 경우에 남자라는 출력문을 출력한다.
+
+	case 2: 
+		printf("당신은 여자입니다. \n");
+		break;		//2번을 입력한 경우에 여자라는 출력문을 출력한다.
+
+	default:
+		printf("잘못 선택하셨습니다. \n");
+		break;		//1, 2번의 특정 숫자가 아닌 다른 수를 입력할 경우의 default 값을 출력한다.
+	}
+}
+
+/*
+
+남자는 1, 여자는 2를 선택: 1
+당신은 남자입니다.
+
+남자는 1, 여자는 2를 선택: 3
+잘못 선택하셨습니다.
+
+*/
