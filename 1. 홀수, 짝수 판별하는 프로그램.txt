@@ -1,0 +1,32 @@
+//IDE: MS Visual Studio Community 2019
+
+#include <stdio.h>
+
+int main()
+{
+	int value;					//임의의 값을 입력 받을 변수 value 선언 
+
+	printf("숫자를 입력하시고 [Enter]를 누르세요: ");
+	scanf_s("%d", &value);				//임의의 값을 value 변수에 선언하기
+
+	if (value % 2 == 0)				//만약에 임의의 값(value)을 나머지 계산하여 0으로 나오면
+		printf("%d는 짝수입니다. \n", value);	//짝수이다.
+	else						//그렇지 않으면
+		printf("%d는 홀수입니다. \n", value);	//홀수이다.
+
+	return 0;
+}
+
+/*
+
+숫자를 입력하시고 [Enter]를 누르세요: 1
+1는 홀수입니다.
+
+*/
+
+/*
+
+숫자를 입력하시고 [Enter]를 누르세요: 2
+2는 짝수입니다.
+
+*/
